@@ -52,9 +52,11 @@ I built each one of the subcomponents in a way that they could be constructed in
 3. Created a dialog with a customized number of subcomponents.
 
 ### Additional Resources
-  * [create-react-app][https://github.com/facebook/create-react-app]
-  * [react-dropdown][https://github.com/fraserxu/react-dropdown]
 
+  * [create-react-app](https://github.com/facebook/create-react-app)
+  * [create-react-app](https://github.com/fraserxu/react-dropdown)
+  * [cisco-color-guidelines](https://www.cisco.com/c/m/en_us/about/brand-center/copyright-use/copyright-material-guidelines/color-guidelines.html)
+  
 ## Future features
 
 1. Due to the time constraint, testing the Dropdown from the external library was unable to be implemented. 
