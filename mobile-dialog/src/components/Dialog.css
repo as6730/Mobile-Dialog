@@ -1,0 +1,10 @@
+.dialog-container {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  width: 400px;
+}
+
+.dialog-header {
+
+}
