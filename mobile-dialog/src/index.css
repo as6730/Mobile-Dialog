@@ -7,7 +7,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+} */
+
+@font-face {
+  font-family: 'BoldWebfont';
+  src: local('BoldWebfont'), url(./fonts/BoldWebfont.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'LightWebfont';
+  src: local('LightWebfont'), url(./fonts/LightWebfont.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'RegularWebfont';
+  src: local('RegularWebfont'), url(./fonts/RegularWebfont.woff2) format('woff2');
 }

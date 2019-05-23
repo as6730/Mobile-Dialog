@@ -12,6 +12,7 @@ class TextInputDialog extends Component {
           id="text_input"
           type="text"
           name="textInput"
+          placeholder="email"
           onChange={(e) => this.props.onChange(e.target.value)}/>
       </SettingDialog>
     );

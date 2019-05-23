@@ -1,0 +1,148 @@
+.modal-wrapper {
+  background: white;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  margin: 100px auto 0;
+  transition: all .8s;
+  width: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: left;
+  font-family: 'LightWebfont';
+  text-align: left;
+  padding: 30px;
+}
+
+.modal-header {
+  font-family: 'LightWebfont';
+  font-size: 21px;
+  color: #58585B;
+}
+
+.modal-subcontent {
+  text-align: left;
+  font-family: 'RegularWebfont';
+  margin: 20px 0px 20px 0px;
+}
+
+.modal-subcontent-title {
+  font-family: 'BoldWebfont';
+  color: #58585B;
+  font-size: 12px;
+  margin: 5px 0px;
+}
+
+.modal-subcontent-description {
+  font-family: 'RegularWebfont';
+  color: #58585B;
+  font-size: 12px;
+  margin: 5px 0px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-display {
+  background-color: #049FD9;
+  border: 1px solid #049FD9;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 5px 25px;
+  font-family: 'BoldWebfont';
+  color: white;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+}
+
+.btn-primary {
+  background-color: #049FD9;
+  border: 1px solid #049FD9;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 5px 25px;
+  font-family: 'BoldWebfont';
+  color: white;
+}
+
+.btn-secondary {
+  border: 1px solid #049FD9;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 5px 20px;
+  font-family: 'BoldWebfont';
+  margin-right: 15px;
+  color: #049FD9;
+}
+
+.close-modal-btn {
+  color: #58585B;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  float: right;
+  font-size: 17px;
+  margin: -20px;
+}
+
+/* Email Input */
+
+#text_input {
+  border: 1px solid #E8EBF1;
+  width: 295px;
+  height: 30px;
+  border-radius: 2px;
+  text-indent: 5px;
+  margin: 5px 0px;
+}
+
+input[type="text"] {
+  font-family: 'RegularWebfont';
+  color: #39393B;
+  font-size: 12px;
+}
+
+/* Radio Buttons */
+.radio-btn-container {
+  font-family: 'RegularWebfont';
+  color: #626469;
+  font-size: 12px;
+  margin: 10px 0px;
+}
+
+.radio-btn-control {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  vertical-align: middle;
+  background-color: inherit;
+  color: #049FD9;
+  border: 2px solid #666;
+  border-radius: 24px;
+  transform: scale(0.75);
+}
+
+.radio-btn-input:checked+.radio-btn-control:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #049FD9;
+  border-radius: 30px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Dropdown */
+
+.my-dropdown-control:hover {
+  box-shadow: 0 1px 0 rgba(198, 199, 202, 0.06);
+}

@@ -10,7 +10,6 @@ app.post('/submit', function(req, res) {
     let email = req.body.email;
     
     console.log(JSON.stringify(req.body))
-    console.log(`my email is: ${email}`)
 
     res.send('Success!')
 });

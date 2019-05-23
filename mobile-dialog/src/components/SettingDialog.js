@@ -1,14 +1,13 @@
 import React, { Component } from "react";
-import './SettingDialog.css';
 
 class SettingDialog extends Component {
   render() {
     return (
-      <div className="setting-dialog-container">
-        <div className="setting-dialog-title">
+      <div className="modal-subcontent">
+        <div className="modal-subcontent-title">
           {this.props.title}
         </div>
-        <div className="setting-dialog-description">
+        <div className="modal-subcontent-description">
           {this.props.description}
         </div>
         {this.props.children}

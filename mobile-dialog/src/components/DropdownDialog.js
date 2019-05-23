@@ -1,16 +1,25 @@
 import React, { Component } from "react";
 import SettingDialog from './SettingDialog';
+import Dropdown from 'react-dropdown';
+import './DropdownStyles.css';
 
 class DropdownDialog extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      selected: this.props.options[0]
+    }
     this.onChange.bind(this)
-    this.props.onChange(this.props.options[0])
+    this.props.onChange(this.state.selected)
   }
 
   onChange(value) {
+    this.setState({
+      selected: value
+    });
     this.props.onChange(value)
   }
+
 
   render() {
     return (
@@ -18,13 +27,12 @@ class DropdownDialog extends Component {
         title={this.props.title}
         description={this.props.description}
       >
-        <select onChange={(e) => {this.onChange(e.target.value)}}>
-          {this.props.options.map((title, idx) =>
-              <option key={idx} value={title}>
-                {title}
-              </option>
-          )}
-        </select>
+        <Dropdown
+          className="dropdown-container"
+          arrowClassName="my-dropdown-control"
+          options={this.props.options}
+          onChange={(option) => {this.onChange(option.label)}}
+          value={this.state.selected} />
       </SettingDialog>
     );
   }

@@ -5,7 +5,7 @@ class RadioButtonsDialog extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      checkedIndex: 0
+      checkedIndex: 2
     }
     this.onChange.bind(this)
     this.props.onChange(this.props.options[this.state.checkedIndex])
@@ -25,12 +25,14 @@ class RadioButtonsDialog extends Component {
         description={this.props.description}
       >
         {this.props.options.map((title, idx) =>
-          <div key={idx}>
+          <div key={idx} className="radio-btn-container">
             <input
+              className="radio-btn-input"
               id={`radio_${idx}`}
               type="radio"
               checked={this.state.checkedIndex === idx}
               onChange={() => {this.onChange(idx)}} />
+            <span className="radio-button-control"></span>
             {title}
           </div>
         )}

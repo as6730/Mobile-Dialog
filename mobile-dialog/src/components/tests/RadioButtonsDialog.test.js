@@ -21,7 +21,7 @@ test('RadioButtonsDialog onChange gets called in constructor', () => {
     options={['Option 1', 'Option 2', 'Option 3']}
     onChange={(text) => {result = text;}}/>);
 
-  expect(result).toEqual('Option 1');
+  expect(result).toEqual('Option 3');
 });
 
 test('RadioButtonsDialog onChange updates selection', () => {

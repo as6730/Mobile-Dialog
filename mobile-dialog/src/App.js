@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import MobileDeviceSettingsModal from './components/MobileDeviceSettingsModal';
-import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -9,7 +8,7 @@ class App extends Component {
       showModal: false
     }
   }
-  
+
   async submit(state) {
     await fetch('http://localhost:3001/submit', {
       method: 'POST',
@@ -19,20 +18,20 @@ class App extends Component {
       },
       body: JSON.stringify(state)
     })
-    
+
     this.setState({showModal: false})
   }
-  
+
   render() {
     return (
-      <div className="App">
+      <div>
         {this.state.showModal ?
           <MobileDeviceSettingsModal
             dismissModal={() => this.setState({showModal: false})}
             onSave={this.submit.bind(this)}
           />
           :
-          <button onClick={() => this.setState({showModal: !this.state.showModal})}>Show Modal</button>
+          <button className="btn-display" onClick={() => this.setState({showModal: !this.state.showModal})}>Show Modal</button>
         }
       </div>
     );
