@@ -18,7 +18,8 @@ class MobileDeviceSettingsModal extends Component {
     return (
       <Dialog
         title="Mobile Device Settings"
-        onSave={() => alert(JSON.stringify(this.state))}>
+        onSave={() => alert(JSON.stringify(this.state))}
+        dismissModal={this.props.dismissModal}>
         <TextInputDialog
           title="Organization's Administrator's Email Address"
           description="Lorem ipsum"
