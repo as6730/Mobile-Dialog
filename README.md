@@ -15,6 +15,7 @@ npm start
 To run the server (port 3001):
 ```
 cd Mobile-Dialog/dummy_server/
+npm install
 node index.js
 ```
 
