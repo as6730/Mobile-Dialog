@@ -9,6 +9,7 @@ class TextInputDialog extends Component {
         description={this.props.description}
       >
         <input
+          id="text_input"
           type="text"
           name="textInput"
           onChange={(e) => this.props.onChange(e.target.value)}/>

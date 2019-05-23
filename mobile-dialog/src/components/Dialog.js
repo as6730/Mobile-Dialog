@@ -11,7 +11,7 @@ class Dialog extends Component {
         </div>
         {this.props.children}
         <button onClick={this.props.dismissModal}>Cancel</button>
-        <button onClick={this.props.onSave}>Save</button>
+        <button id="dialog-btn-save" onClick={this.props.onSave}>Save</button>
       </div>
     );
   }

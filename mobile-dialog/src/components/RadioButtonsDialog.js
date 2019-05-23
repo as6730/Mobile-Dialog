@@ -26,7 +26,9 @@ class RadioButtonsDialog extends Component {
       >
         {this.props.options.map((title, idx) =>
           <div key={idx}>
-            <input type="radio"
+            <input
+              id={`radio_${idx}`}
+              type="radio"
               checked={this.state.checkedIndex === idx}
               onChange={() => {this.onChange(idx)}} />
             {title}
